@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<!-- 用户填写房间信息的表单，APP访问的网页 -->
+<html>
+<head>
+<meta charset="UTF-8">
+    <title>智能家居设置</title>
+</head>
+<body>
+ <form action="HelloTest" method="post">
+ <!-- HelloTest是用来接收表单信息的Servlet类 -->
+        智能家居设置       
+        <br/>
+        姓名: <input type="text" name="firstname" /><br />
+        电话: <input type="text" name="phonenumber" /><br/>
+        邮箱: <input type="text" name="mailnumber" /><br/>
+   IMEI: <input type="text" name="imeinumber" /><br/>
+        <br/>     
+        请输入房间个数<br/>
+        <input type="text" name="roomnumber" /><br/>
+        请输入房间名和房内设备（例：卧室：一盏灯，一个空调，一个电扇）<br/>
+        <textarea rows="20" cols="50" name="room_and_in"></textarea><br/>
+        <input type="submit" value="提交">
+    </form>   
+</body>
+</html>
